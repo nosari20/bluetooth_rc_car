@@ -29,5 +29,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.btconfigure).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(_this, BluetoothActivity.class));
+            }
+        });
+
+        findViewById(R.id.bttest).setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(_this, TestBluetoothActivity.class));
+            }
+        });
+
     }
 }

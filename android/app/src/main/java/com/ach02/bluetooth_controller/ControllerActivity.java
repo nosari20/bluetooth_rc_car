@@ -1,16 +1,23 @@
 package com.ach02.bluetooth_controller;
 
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
 import com.ach02.bluetooth_controller.controllers.joysticks.Joystick;
 
+import java.util.Set;
 
 
 public class ControllerActivity extends AppCompatActivity {
+
+    private static final String TAG = "BtInterface";
 
 
     private Joystick lr_joystick, fb_joystick;
@@ -141,4 +148,13 @@ public class ControllerActivity extends AppCompatActivity {
     private void send(String command){
         log.setText(command);
     }
+
+
+
+
+
+
 }
+
+
+

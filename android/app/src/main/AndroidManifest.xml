@@ -32,7 +32,8 @@
             android:label="@string/title_activity_controller"
             android:screenOrientation="landscape"
             android:theme="@style/FullscreenTheme" />
-
+        <activity android:name=".BluetoothActivity" />
+        <activity android:name=".TestBluetoothActivity"></activity>
     </application>
 
 </manifest>
